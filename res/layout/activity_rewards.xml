@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Rewards">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/desc"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="@dimen/title_text"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:text="@string/rewardsTitle" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/rewardsDesc"
+            android:textAlignment="center"
+            android:textColor="#000" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1.5dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/rewardsPrompt"
+            android:textSize="22sp" />
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="14dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="1"
+            app:columnOrderPreserved="false"
+            app:rowCount="2">
+
+            <!--    slot 1x1     -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+
+            <!--    slot 2x1     -->
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+
+            <!--    slot 3x1     -->
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginStart="@dimen/churro_margin"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginEnd="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+
+            <!--    slot 4x1     -->
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginStart="@dimen/churro_margin"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginEnd="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+
+            <!--    slot 5x1     -->
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginStart="@dimen/churro_margin"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginEnd="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+
+            <!--    slot 6x1     -->
+            <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginStart="@dimen/churro_margin"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginEnd="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+            </LinearLayout>
+            <!--    slot 1x2     -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginStart="@dimen/churro_margin"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginEnd="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+
+            <!--    slot 2x2     -->
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginStart="@dimen/churro_margin"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginEnd="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+
+            <!--    slot 3x2     -->
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginStart="@dimen/churro_margin"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginEnd="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+
+            <!--    slot 4x2     -->
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginStart="@dimen/churro_margin"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginEnd="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+
+            <!--    slot 5x2     -->
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginStart="@dimen/churro_margin"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginEnd="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+
+            <!--    slot 6x2     -->
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="@dimen/churro_icon"
+                    android:layout_height="@dimen/churro_icon"
+                    android:layout_marginStart="@dimen/churro_margin"
+                    android:layout_marginLeft="@dimen/churro_margin"
+                    android:layout_marginTop="@dimen/churro_margin"
+                    android:layout_marginEnd="@dimen/churro_margin"
+                    android:layout_marginRight="@dimen/churro_margin"
+                    android:layout_marginBottom="@dimen/churro_margin"
+                    android:contentDescription="@string/desc"
+                    app:srcCompat="@drawable/badchurro" />
+            </LinearLayout>
+
+        </android.support.v7.widget.GridLayout>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1.5dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#000" />
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_marginTop="@dimen/button_margin"
+            android:layout_marginBottom="@dimen/button_margin"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:text="@string/scan"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/redeem_btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_marginTop="@dimen/button_margin"
+            android:layout_marginBottom="@dimen/button_margin"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:text="@string/redeem"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/forcechange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Force Manual Purchase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+</ScrollView>

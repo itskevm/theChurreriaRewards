@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints"
+        android:background="#fff">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <ImageView
+                android:contentDescription="@null"
+                android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+                android:layout_gravity="center"
+            android:src="@drawable/logo"
+                android:maxHeight="150dp"
+                android:maxWidth="150dp"
+                android:adjustViewBounds="true"
+                tools:layout_editor_absoluteY="150dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/top_churro"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:textAlignment="center" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="1.5dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/div_line_margin"
+                android:layout_marginBottom="@dimen/div_line_margin"
+                android:background="#000" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:contentDescription="@string/top_churro_desc"
+                android:maxWidth="200dp"
+                android:maxHeight="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ownersfav" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ownersfav"
+                android:textColor="#000"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textSize="22sp" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="1.5dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/div_line_margin"
+                android:layout_marginBottom="@dimen/div_line_margin"
+                android:background="#000" />
+
+            <!--android:background="@color/colorPrimary"-->
+            <Button
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="@dimen/button_margin"
+                android:background="@drawable/custom_button"
+                android:elevation="5dp"
+                android:text="@string/btn_glasscard"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:onClick="goToGlasscard" />
+
+            <!--android:background="#96281b"-->
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="@dimen/button_margin"
+                android:background="@drawable/custom_button"
+                android:elevation="5dp"
+                android:text="@string/btn_byo"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:onClick="goToBuild" />
+
+            <!--android:background="#f62459"-->
+            <Button
+                android:layout_width="221dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/btn_rewards"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:gravity="center_vertical|center"
+                android:onClick="goToRewards" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="1.5dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/div_line_margin"
+                android:layout_marginBottom="@dimen/div_line_margin"
+                android:background="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="221dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/phone"
+                    android:onClick="goToDialer"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/compass"
+                    android:onClick="goToNavigation"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

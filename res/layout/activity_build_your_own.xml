@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".BuildYourOwn">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ReadableText"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:contentDescription="@string/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"
+                android:maxHeight="80dp"
+                android:maxWidth="80dp"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textSize="@dimen/title_text"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/byoTitle" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/byoDesc" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="1.5dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/div_line_margin"
+                android:layout_marginBottom="@dimen/div_line_margin"
+                android:background="#000" />
+
+            <ImageView
+                android:id="@+id/ivChurro"
+                android:layout_width="wrap_content"
+                android:layout_height="225dp"
+                android:contentDescription="@string/desc"
+                app:srcCompat="@drawable/blankchurro" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="1.5dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/div_line_margin"
+                android:layout_marginBottom="@dimen/div_line_margin"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/tvStep1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/stepone" />
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="14dp"
+                app:alignmentMode="alignMargins"
+                app:columnCount="2"
+                app:columnOrderPreserved="false"
+                app:rowCount="2">
+
+                <!-- Row 1 -->
+                <!-- Column 1 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSize1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/size1" />
+                </LinearLayout>
+                <!-- Column 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPrice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/price1" />
+                </LinearLayout>
+
+                <!-- Row 2 -->
+                <!-- Column 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSize2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/size2" />
+                </LinearLayout>
+                <!-- Column 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPrice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/price2" />
+                </LinearLayout>
+            </android.support.v7.widget.GridLayout>
+
+            <TextView
+                android:id="@+id/tvStep2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/steptwo" />
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="14dp"
+                app:alignmentMode="alignMargins"
+                app:columnCount="3"
+                app:columnOrderPreserved="false"
+                app:rowCount="1">
+
+                <!-- Column 1 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <!-- Row 1 -->
+                    <TextView
+                        android:id="@+id/tvOp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill1" />
+                    <!-- Row 2 -->
+                    <TextView
+                        android:id="@+id/tvOp4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill4" />
+                    <!-- Row 3 -->
+                    <TextView
+                        android:id="@+id/tvOp7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill7" />
+                    <!-- Row 4 -->
+                    <TextView
+                        android:id="@+id/tvOp10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill10" />
+                </LinearLayout>
+
+                <!-- Column 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <!-- Row 1 -->
+                    <TextView
+                        android:id="@+id/tvOp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill2" />
+                    <!-- Row 2 -->
+                    <TextView
+                        android:id="@+id/tvOp5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill5" />
+                    <!-- Row 3 -->
+                    <TextView
+                        android:id="@+id/tvOp8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill8" />
+                    <!-- Row 4 -->
+                    <TextView
+                        android:id="@+id/tvOp11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill11" />
+                </LinearLayout>
+
+                <!-- Column 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:orientation="vertical">
+                    <!-- Row 1 -->
+                    <TextView
+                        android:id="@+id/tvOp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill3" />
+                    <!-- Row 2 -->
+                    <TextView
+                        android:id="@+id/tvOp6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill6" />
+                    <!-- Row 3 -->
+                    <TextView
+                        android:id="@+id/tvOp9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill9" />
+                    <!-- Row 4 -->
+                    <TextView
+                        android:id="@+id/tvOp12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/fill12" />
+                </LinearLayout>
+
+            </android.support.v7.widget.GridLayout>
+
+            <TextView
+                android:id="@+id/tvStep3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/stepthree" />
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="14dp"
+                app:alignmentMode="alignMargins"
+                app:columnCount="4"
+                app:columnOrderPreserved="false"
+                app:rowCount="1">
+
+                <!-- Column 1 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <!-- Row 1 -->
+                    <TextView
+                        android:id="@+id/tvTop1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top1" />
+                    <!-- Row 2 -->
+                    <TextView
+                        android:id="@+id/tvTop5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top5" />
+                    <!-- Row 3 -->
+                    <TextView
+                        android:id="@+id/tvTop9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top9" />
+                </LinearLayout>
+
+                <!-- Column 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <!-- Row 1 -->
+                    <TextView
+                        android:id="@+id/tvTop2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top2" />
+                    <!-- Row 2 -->
+                    <TextView
+                        android:id="@+id/tvTop6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top6" />
+                    <!-- Row 3 -->
+                    <TextView
+                        android:id="@+id/tvTop10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top10" />
+                </LinearLayout>
+
+                <!-- Column 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <!-- Row 1 -->
+                    <TextView
+                        android:id="@+id/tvTop3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top3" />
+                    <!-- Row 2 -->
+                    <TextView
+                        android:id="@+id/tvTop7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top7" />
+                    <!-- Row 3 -->
+                    <TextView
+                        android:id="@+id/tvTop11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top11" />
+                </LinearLayout>
+
+                <!-- Column 4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:orientation="vertical">
+                    <!-- Row 1 -->
+                    <TextView
+                        android:id="@+id/tvTop4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top4" />
+                    <!-- Row 2 -->
+                    <TextView
+                        android:id="@+id/tvTop8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top8" />
+                    <!-- Row 3 -->
+                    <TextView
+                        android:id="@+id/tvTop12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="@string/top12" />
+                </LinearLayout>
+
+            </android.support.v7.widget.GridLayout>
+
+            <TextView
+                android:id="@+id/tvDrinks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/stepfour" />
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="14dp"
+                app:alignmentMode="alignMargins"
+                app:columnCount="2"
+                app:columnOrderPreserved="false"
+                app:rowCount="2">
+
+                <!-- Row 1 -->
+                <!-- Column 1 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDrink1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drink1" />
+                </LinearLayout>
+                <!-- Column 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDrink2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drink2" />
+                </LinearLayout>
+
+                <!-- Row 2 -->
+                <!-- Column 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDrink3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drink3" />
+                </LinearLayout>
+                <!-- Column 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Drink4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drink4" />
+                </LinearLayout>
+            </android.support.v7.widget.GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

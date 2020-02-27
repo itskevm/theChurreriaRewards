@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Churreria Rewards</string>
+    <string name="company_name">Churreria</string>
+
+    <string name="top_churro">Today\'s Top Churro</string>
+    <string name="top_churro_desc">Picture of a signature churro</string>
+    <string name="ownersfav">The Owner\'s Favourite</string>
+    <string name="rasfudgekit">Raspberry and Hot Fudge with Kit Kat</string>
+    <string name="raspcream">Raspberry and Cream Cheese</string>
+    <string name="reeseice">Hot Fudge Caramel with Reese\'s and Ice Cream</string>
+
+    <string name="btn_glasscard">Glass Card Deals</string>
+    <string name="btn_byo">View Build Your Own Menu</string>
+    <string name="btn_rewards">Redeem Rewards</string>
+    <string name="contact">Find us:</string>
+
+    <string name="rewardsPrompt">4 churros = 25% off\n
+        8 churros = 50% off\n12 churros = Free churro!</string>
+    <string name="desc">A churro icon</string>
+    <string name="scan">Scan QR code</string>
+    <string name="redeem">No coupon available</string>
+    <string name="discount25">25% off one churro</string>
+    <string name="discount50">50% off one churro</string>
+    <string name="discount100">ONE FREE CHURRO</string>
+    <string name="rewardsTitle">Redeem Rewards</string>
+    <string name="rewardsDesc">The more churros you buy,
+        the more coupons you get!\n\n
+        TO RECORD A PURCHASE: Press the scan button below
+        and ask the cashier to present you a scannable code
+        to verify your purchase.\nMax 3 scans per visit.\n\n
+        TO USE A COUPON: Show the cashier this screen and tell
+        them which coupon you are redeeming.</string>
+
+    <string name="byoTitle">Build Your Own</string>
+    <string name="byoDesc">You can always buy plain churros,
+        but our customers love to customize them with different fillings
+        and toppings, including ice cream. This is our full menu!</string>
+    <string name="stepone">
+        <u>Step 1 - Choose a size</u>
+    </string>
+    <string name="steptwo">
+        <u>Step 2 - Choose a filling (first is free, then 50¢ each)</u>
+    </string>
+    <string name="stepthree">
+        <u>Step 3 (optional) - Choose a topping (50¢ each)</u>
+    </string>
+    <string name="stepfour">
+        <u>Drinks</u>
+    </string>
+    <string name="size1">Full Churro (8\")</string>
+    <string name="price1">$ 2.50</string>
+    <string name="size2">Half Churro (4\")</string>
+    <string name="price2">$ 1.50</string>
+
+    <string name="fill1">Raspberry</string>
+    <string name="fill2">Hot Fudge</string>
+    <string name="fill3">Peanut Butter</string>
+    <string name="fill4">Strawberry</string>
+    <string name="fill5">Caramel</string>
+    <string name="fill6">Cream Cheese</string>
+    <string name="fill7">Blueberry</string>
+    <string name="fill8">Key Lime</string>
+    <string name="fill9">Sweet Cream</string>
+    <string name="fill10">  </string>
+    <string name="fill11">Lemon</string>
+    <string name="fill12">Bavarian</string>
+
+    <string name="top1">Oreo</string>
+    <string name="top2">Reese\'s</string>
+    <string name="top3">Kit Kat</string>
+    <string name="top4">Milky Way</string>
+    <string name="top5">Twix</string>
+    <string name="top6">Banana</string>
+    <string name="top7">Snickers</string>
+    <string name="top8">Whipped Cream</string>
+    <string name="top9">Rollo</string>
+    <string name="top10">  </string>
+    <string name="top11">  </string>
+    <string name="top12">Ice Cream ($ 1)</string>
+
+    <string name="drink1">Soda</string>
+    <string name="drink2">Water</string>
+    <string name="drink3">Horchata</string>
+    <string name="drink4">Hot Chocolate</string>
+</resources>
